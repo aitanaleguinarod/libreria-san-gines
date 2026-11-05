@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2e8d5">
+  <meta name="description" content="San Ginés: un rincón de Madrid donde cada libro tiene calle. Descubre la historia de este lugar histórico en el corazón de la ciudad.">
+  <title>San Ginés — Cada libro tiene calle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-papel text-tinta font-texto antialiased transition-colors duration-300 dark:bg-[#1f211d] dark:text[#f2e8d5]">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <div class="topline flex items-center justify-center px-4 py-2 text-center text-xs tracking-[.16em] uppercase">
+    Un rincón con historia · Madrid
+  </div>
+
+  <header class="site-header sticky top-0 z-50 border-b border-tinta/15 bg-papel/95 backdrop-blur-md dark:bg-[#1f211d]/95 dark:border-white/15">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10" aria-label="Navegación principal">
+      <a href="#inicio" class="brand-mark" aria-label="San Ginés, inicio">
+        <span class="brand-small">Librería histórica</span>
+        <span class="brand-name">SAN GINÉS<span class="brand-dot">.</span></span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a class="nav-link" href="#historia">La historia</a>
+        <a class="nav-link" href="#hallazgos">Hallazgos</a>
+        <a class="nav-link" href="#actualidad">Actualidad</a>
+        <a class="nav-link" href="#visita">Visítanos</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Activar modo oscuro" title="Cambiar modo de color">
+          <svg id="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <button id="menu-toggle" class="icon-button md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu hidden md:hidden">
+      <a href="#historia">La historia <span>01</span></a>
+      <a href="#hallazgos">Hallazgos <span>02</span></a>
+      <a href="#actualidad">Actualidad <span>03</span></a>
+      <a href="#visita">Visítanos <span>04</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero-section relative overflow-hidden">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 md:grid-cols-12 md:gap-8 md:px-10 md:py-20 lg:py-24">
+        <div class="hero-copy relative z-10 md:col-span-7">
+          <p class="eyebrow reveal"><span class="eyebrow-line"></span> Pasadizo de San Ginés · Madrid</p>
+          <h1 class="hero-title reveal">Cada libro<br><em>tiene calle.</em></h1>
+          <p class="hero-description reveal">Hay lugares que guardan historias incluso cuando cierran sus páginas. En el corazón de Madrid, San Ginés forma parte de una ciudad que también se lee caminando.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-4 reveal">
+            <a href="#historia" class="button-primary">Descubre su historia <span aria-hidden="true">↗</span></a>
+            <a href="#visita" class="text-link">Encuentra el lugar <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note reveal"><span>Una pequeña parada<br>en la memoria de Madrid.</span></div>
+        </div>
+        <div class="hero-visual relative md:col-span-5 reveal">
+          <div class="hero-photo-wrap">
+            <img src="galería/SANGINES1.webp"alt="Estanterías de una librería antigua llenas de libros" class="hero-photo">
+            <div class="photo-caption"><span>Archivo visual</span><span>Fig. 01 — El refugio</span></div>
+          </div>
+          <div class="round-stamp" aria-label="Madrid, cultura y memoria">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circlePath" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs><text><textPath href="#circlePath">MADRID · CULTURA · MEMORIA · MADRID · CULTURA · </textPath></text></svg>
+            <span class="stamp-center">SG</span>
+          </div>
+          <span class="hero-index">40°25' N<br>03°42' O</span>
+        </div>
+      </div>
+      <div class="hero-bottom mx-auto flex max-w-7xl items-center justify-between px-5 pb-5 md:px-10">
+        <span>Una historia que sigue en la calle</span><span class="scroll-cue">DESLIZA PARA DESCUBRIR ↓</span>
+      </div>
+    </section>
+
+    <section id="historia" class="story-section section-pad">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-12 md:gap-10 md:px-10">
+        <div class="md:col-span-4">
+          <p class="eyebrow"><span class="eyebrow-line"></span> 01 / El lugar</p>
+          <h2 class="section-title">Un pasadizo.<br><em>Mil historias.</em></h2>
+        </div>
+        <div class="story-body md:col-span-7 md:col-start-6">
+          <p class="story-lead">Una librería de calle que lleva más de tres siglos formando parte de la memoria de Madrid.</p>
+          <p>En el número 2 del Pasadizo de San Ginés, junto a la iglesia del mismo nombre y a pocos pasos de la calle del Arenal, la historia del puesto de libros está documentada desde el siglo XVII. Su origen conocido se remonta al 29 de noviembre de 1650, cuando Diego Logroño aparece como el primer librero establecido en este enclave.</p>
+          <p>Durante generaciones, sus anaqueles y puestos a pie de calle reunieron libros antiguos y de segunda mano: narrativa, obras especializadas, ediciones difíciles de encontrar y publicaciones para lectores curiosos. La librería se convirtió así en un pequeño refugio para coleccionistas y amantes del libro usado.</p>
+          <p>Esta web es un homenaje a ese patrimonio comercial y cultural. No pretende reconstruir una historia idealizada, sino contar cómo un establecimiento ha acompañado los cambios del centro de Madrid y cómo su identidad continúa transformándose.</p>
+          <a href="#cronologia" class="text-link mt-5 inline-flex">Recorre su cronología <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+      <div id="cronologia" class="timeline-wrap mx-auto mt-20 max-w-7xl px-5 md:px-10">
+        <div class="timeline-heading" data-aos="fade-up">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Fechas que dejan huella</p>
+          <h3 class="timeline-title">Una historia <em>en el tiempo.</em></h3>
+        </div>
+        <ol class="history-timeline">
+          <li class="timeline-item" data-aos="fade-up"><span class="timeline-year">1650</span><div><h4>El primer librero documentado</h4><p>Diego Logroño aparece establecido en el entorno del Puentecillo de San Ginés el 29 de noviembre. Es el origen histórico conocido de la librería.</p></div></li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="80"><span class="timeline-year">1655</span><div><h4>Andrea del Campo</h4><p>Un documento fechado el 8 de octubre recoge a Andrea del Campo, viuda de Diego Logroño, vinculada al puesto de libros de San Ginés.</p></div></li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="120"><span class="timeline-year">1767</span><div><h4>El puesto de Bartholomé López</h4><p>La obra <em>El nuevo para todos</em> menciona el puesto y librería de Bartholomé López junto a la Escalerilla de San Ginés.</p></div></li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="160"><span class="timeline-year">1899</span><div><h4>Un comercio reconocido por Madrid</h4><p>La documentación histórica sitúa la librería en manos de Ángel y Manuel Calleja, que más tarde la traspasaron a Francisco Lastra y Anastasio Moyano.</p></div></li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="200"><span class="timeline-year">1922</span><div><h4>Antonio Sánchez</h4><p>Antonio Sánchez figura como propietario y la librería aparece citada en la publicidad de la Enciclopedia Espasa.</p></div></li>
+          <li class="timeline-item" data-aos="fade-up" data-aos-delay="240"><span class="timeline-year">1952</span><div><h4>La etapa de Luis Sanz</h4><p>Luis Sanz se hace cargo de San Ginés y permanece al frente durante más de cincuenta años, manteniendo la tradición de los libros de ocasión.</p></div></li>
+          <li class="timeline-item timeline-present" data-aos="fade-up" data-aos-delay="280"><span class="timeline-year">2025—HOY</span><div><h4>Un espacio que evoluciona</h4><p>Desde el otoño de 2025, el establecimiento dedica la mayor parte de su espacio a souvenirs, aunque todavía conserva una selección de libros. Su historia continúa adaptándose a los nuevos tiempos.</p></div></li>
+        </ol>
+        <p class="history-source-note">Cronología elaborada a partir de la documentación de Comercios Centenarios de Madrid y la ficha turística municipal. Las fechas indican referencias documentales, no necesariamente cambios de titularidad continuos.</p>
+      </div>
+      <div class="story-image-band mx-auto mt-14 max-w-7xl px-5 md:px-10 reveal">
+        <img src="galería/MAQUINADEESCRIBIR.webp" alt="Libros antiguos apilados y páginas con textura" loading="lazy">
+        <div class="image-band-label"><span>OBJETOS CON MEMORIA</span><span>Una historia en cada lomo.</span></div>
+      </div>
+    </section>
+
+    <section id="hallazgos" class="finds-section section-pad">
+      <div class="mx-auto max-w-7xl px-5 md:px-10">
+        <div class="section-heading-row">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> 02 / Pequeños hallazgos</p><h2 class="section-title">Cosas que<br><em>merecen quedarse.</em></h2></div>
+          <p class="section-intro">Una librería también se recuerda por los detalles: una cubierta gastada, una imagen de otra época, una nota entre páginas.</p>
+        </div>
+        <div class="finds-grid mt-12" data-aos="fade-up" data-aos-duration="850">
+          <article class="find-card reveal">
+            <div class="find-image"><img src="galería/danika-perkinson-h4ZA84B834w-unsplash.webp" alt="Libro abierto sobre una mesa" loading="lazy"><span class="find-number">01</span><span class="find-stamp">PÁGINAS<br>VIVIDAS</span></div>
+            <div class="find-meta"><span>EL OBJETO</span><span>01—03</span></div>
+            <h3>Libros con recorrido</h3><p>Las marcas del tiempo también cuentan algo: dobleces, anotaciones y cubiertas que han pasado por otras manos.</p>
+          </article>
+          <article class="find-card reveal">
+            <div class="find-image"><img src="galería/SANGINESPOSTAL.webp" alt="Papeles, notas y recuerdos impresos" loading="lazy"><span class="find-number">02</span><span class="find-stamp">OTRAS<br>ÉPOCAS</span></div>
+            <div class="find-meta"><span>EL RECUERDO</span><span>02—03</span></div>
+            <h3>Imágenes que vuelven</h3><p>Postales, ilustraciones y pequeños fragmentos gráficos que guardan la huella de una ciudad cambiante.</p>
+          </article>
+          <article class="find-card reveal">
+            <div class="find-image"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85" alt="Cuaderno y escritura sobre papel" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85'"><span class="find-number">03</span><span class="find-stamp">DETALLES<br>ÚNICOS</span></div>
+            <div class="find-meta"><span>EL DETALLE</span><span>03—03</span></div>
+            <h3>Lo que no buscabas</h3><p>A veces el mejor hallazgo no estaba en la lista. Solo hacía falta detenerse y mirar un poco más.</p>
+          </article>
+        </div>
+        <div id="actualidad" class="today-note mt-12" data-aos="fade-up"><span class="today-kicker">SAN GINÉS · EN LA ACTUALIDAD</span><p>Un comercio histórico que ha sabido cambiar con Madrid. Hoy combina su memoria librera con una oferta centrada principalmente en recuerdos y artículos para visitantes, sin perder su vínculo con los libros.</p></div>
+      </div>
+    </section>
+
+    <section class="quote-section" data-aos="fade-up">
+      <div class="quote-inner mx-auto max-w-5xl px-5 py-20 text-center md:px-10 md:py-28 reveal">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <p class="quote-text">Las ciudades también se leen.<br><em>Solo hay que aprender a mirarlas.</em></p>
+        <div class="quote-rule"></div>
+        <p class="quote-credit">SAN GINÉS · MADRID</p>
+      </div>
+    </section>
+
+    <section id="visita" class="visit-section section-pad">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-12 md:gap-10 md:px-10">
+        <div class="md:col-span-5">
+          <p class="eyebrow"><span class="eyebrow-line"></span> 03 / Encuentra el lugar</p>
+          <h2 class="section-title">Madrid se lee<br><em>caminando.</em></h2>
+          <p class="section-intro mt-5">Pásate por el centro, pierde un poco el rumbo y descubre uno de esos rincones que hacen que Madrid sea Madrid.</p>
+          <a class="button-primary mt-7 inline-flex" href="https://www.google.com/maps/search/?api=1&query=Pasadizo+de+San+Gines+2+Madrid" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="visit-card md:col-span-6 md:col-start-7">
+          <div class="visit-card-top"><span>FICHA DEL LUGAR</span><span>SG / MAD</span></div>
+          <div class="visit-detail"><div><span class="detail-label">DIRECCIÓN</span><p>Pasadizo de San Ginés, 2<br>28013 Madrid, España</p></div></div>
+          <div class="visit-detail"><div><span class="detail-label">HORARIO</span><p>Todos los días: 10:00–20:30 h.<br><small>Horario publicado por Turismo Madrid; confirma posibles cambios antes de acudir.</small></p></div></div>
+          <div class="visit-detail"><div><span class="detail-label">CÓMO LLEGAR</span><p>Metro Ópera (L2, L5 y Ramal) o Sol (L1, L2 y L3). También hay conexiones de autobús y Cercanías en Sol.</p></div></div><div class="visit-detail"><div><span class="detail-label">CONTACTO</span><p>91 366 46 86<br>libreriasangines@gmail.com</p></div></div>
+          <div class="visit-card-bottom"><span>40°25' N · 03°42' O</span><span class="mini-seal">SG</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="mx-auto max-w-7xl px-5 py-10 md:px-10">
+      <div class="footer-main">
+        <a href="#inicio" class="footer-brand">SAN GINÉS<span>.</span></a>
+        <p>Cada libro tiene calle.<br>Cada calle, una historia.</p>
+        <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+      </div>
+      <div class="footer-bottom"><span>2026</span><span>Hecho con memoria y tinta en Madrid.</span></div>
+      <div class="footer-sources"><span>FUENTES HISTÓRICAS</span><a href="https://comercioscentenariosdemadrid.es/comercio/libreria-san-gines/" target="_blank" rel="noopener noreferrer">Comercios Centenarios de Madrid ↗</a><a href="https://www.esmadrid.com/compras/libreria-san-gines" target="_blank" rel="noopener noreferrer">Turismo Madrid ↗</a></div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
